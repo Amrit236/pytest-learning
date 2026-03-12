@@ -1,10 +1,9 @@
 import pytest
 from playwright.sync_api import Page
+BASE_URL = "https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewEducationList"
 
-BASE_URL = https://opensource-demo.orangehrmlive.com/"
 USERNAME = "Admin"
 PASSWORD = "admin123"
-
 
 @pytest.fixture(scope="function")
 def setup(page: Page):
@@ -16,6 +15,7 @@ def login(page: Page):
     page.fill("input[name='username']", USERNAME)
     page.fill("input[name='password']", PASSWORD)
     page.click("button[type='submit']")
+
     page.wait_for_selector("text=Dashboard")
 
 

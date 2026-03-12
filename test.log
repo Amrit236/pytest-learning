@@ -1,0 +1,11 @@
+2026-03-12 08:06:22,334 - INFO - Screenshot taken for failed test: test_valid_login
+2026-03-12 08:06:35,082 - INFO - Screenshot taken for failed test: test_invalid_login
+2026-03-12 08:06:47,143 - INFO - Screenshot taken for failed test: test_empty_login
+2026-03-12 08:06:58,700 - INFO - Screenshot taken for failed test: test_empty_username
+2026-03-12 08:07:09,403 - INFO - Screenshot taken for failed test: test_empty_password
+2026-03-12 08:07:21,003 - INFO - Screenshot taken for failed test: test_empty_username_password
+2026-03-12 08:12:03,454 - INFO - Screenshot taken for failed test: test_invalid_login
+2026-03-12 08:12:15,593 - INFO - Screenshot taken for failed test: test_empty_login
+2026-03-12 08:12:27,092 - INFO - Screenshot taken for failed test: test_empty_username
+2026-03-12 08:12:38,497 - INFO - Screenshot taken for failed test: test_empty_password
+2026-03-12 08:12:50,011 - INFO - Screenshot taken for failed test: test_empty_username_password

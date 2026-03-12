@@ -6,16 +6,17 @@ def add_job_title(job_title, job_description, file_path=None, note=None):
         page = browser.new_page()
         
         # Open your web application URL
-        page.goto("https://your-app-url.com/login")  # Replace with your actual URL
+        page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewJobTitleList")  # Replace with your actual URL
 
         # Login if required
-        page.fill("input[name='username']", "your_username")
-        page.fill("input[name='password']", "your_password")
+        page.fill("input[name='username']", "Admin")  # Replace with your username
+        page.fill("input[name='password']", "admin123")  # Replace with your password
         page.click("button[type='submit']")
 
         # Navigate to Job > Add Job Title
         page.click("text=Job")  # Click Job menu
-        page.click("text=Add Job Title")  # Click Add Job Title
+        page.locator("button:has-text('Add Job Title')").click()
+     # Click Add Job Title
 
         # Fill the form
         page.fill("input[placeholder='Job Title']", job_title)

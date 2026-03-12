@@ -1,8 +1,16 @@
-from pages.login import login
+
+
+from conftest import logger
+import logging
+
+import pytest
+from playwright.sync_api import sync_playwright 
 from pages.login import login
 
 def test_valid_login(page): 
     login_page = login(page)
+
+    logger.info("Testing valid login with correct credentials")
     login_page.login("Admin", "admin123")
     assert "dashboard" in page.url
 
