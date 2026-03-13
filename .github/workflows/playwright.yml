@@ -27,7 +27,7 @@ jobs:
       - name: collect tests 
         run: |
            pwd
-            ls -R
+           ls -R
             pytest ./tests --collect-only
       - name: Run tests
         run: |
