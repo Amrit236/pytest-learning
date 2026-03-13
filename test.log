@@ -9,3 +9,14 @@
 2026-03-12 08:12:27,092 - INFO - Screenshot taken for failed test: test_empty_username
 2026-03-12 08:12:38,497 - INFO - Screenshot taken for failed test: test_empty_password
 2026-03-12 08:12:50,011 - INFO - Screenshot taken for failed test: test_empty_username_password
+2026-03-12 08:38:50,812 - INFO - Screenshot taken for failed test: test_valid_login
+2026-03-12 08:39:03,386 - INFO - Screenshot taken for failed test: test_invalid_login
+2026-03-12 08:39:13,492 - INFO - Screenshot taken for failed test: test_empty_login
+2026-03-12 08:39:30,546 - INFO - Screenshot taken for failed test: test_empty_username
+2026-03-12 08:39:43,646 - INFO - Screenshot taken for failed test: test_empty_password
+2026-03-12 08:39:56,279 - INFO - Screenshot taken for failed test: test_empty_username_password
+2026-03-12 19:46:13,828 - INFO - Screenshot taken for failed test: test_add_education
+2026-03-12 22:45:30,442 - INFO - Screenshot taken for failed test: test_add_skill
+2026-03-12 22:47:26,443 - INFO - Screenshot taken for failed test: test_add_skill
+2026-03-12 22:48:24,022 - INFO - Screenshot taken for failed test: test_add_skill
+2026-03-12 22:53:01,533 - INFO - Screenshot taken for failed test: test_add_skill

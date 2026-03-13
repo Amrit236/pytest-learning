@@ -1,9 +1,12 @@
 import pytest
 from playwright.sync_api import Page
+from pages.login import login
 
-BASE_URL = "https://opensource-demo.orangehrmlive.com/"
-USERNAME = "Admin"
-PASSWORD = "admin123"
+from tests.test_add_user import BASE_URL
+
+# BASE_URL = "https://opensource-demo.orangehrmlive.com/"
+# USERNAME = "Admin"
+# PASSWORD = "admin123"
 
 
 @pytest.fixture(scope="function")
@@ -12,11 +15,18 @@ def setup(page: Page):
     yield page
 
 
+
+
 def login(page: Page):
     page.fill("input[name='username']", USERNAME)
     page.fill("input[name='password']", PASSWORD)
     page.click("button[type='submit']")
     page.wait_for_selector("text=Dashboard")
+
+def navigate_to_skills(page):
+    page.get_by_role("link", name="My Info").click()
+    page.get_by_role("link", name="Qualifications").click()
+    page.get_by_role("link", name="Skills").click()
 
 
 def navigate_to_skills(page: Page):
