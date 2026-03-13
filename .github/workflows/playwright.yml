@@ -25,12 +25,12 @@ jobs:
          python -m playwright install
 
       - name: collect tests 
-        runs: |
+        run: |
            pwd
             ls -R
             pytest ./tests --collect-only
       - name: Run tests
-        runs: |
+        run: |
          pytest ./tests --html=report.html --self-contained-html
 
       - name: upload test report
