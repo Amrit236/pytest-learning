@@ -19,8 +19,8 @@ jobs:
         with:
           python-version: '3.13'
 
-      - name: Install Dependencies
-        run:
+      - name: Install dependencies
+        run: |
          pip install -r requirement.txt
          python -m playwright install
 
