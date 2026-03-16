@@ -36,3 +36,11 @@ def pytest_runtest_makereport(item, call):
             screenshot_path = f"screenshot/{item.name}.png"
             page.screenshot(path=screenshot_path)
             logger.info(f"Screenshot taken for failed test: {item.name}")
+
+
+
+# def test_valid_login(page, username, password):  
+#     login = login(page)
+#     login.info(f"Testing valid login with correct credentials")      
+#     login.login(username, password)
+#     assert "dashboard" in page.url
